@@ -38,4 +38,9 @@ public class BoardController {
         boardService.updateArticle(boardSeq, boardVo);
     }
 
+    @DeleteMapping("/delete/{id}")
+    public void deleteArticle(@PathVariable(name = "id") Long boardSeq) {
+        boardService.deleteArticle(boardSeq);
+    }
+
 }

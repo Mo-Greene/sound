@@ -60,4 +60,8 @@ public class BoardService {
         boardRepository.save(board);
     }
 
+    public void deleteArticle(Long boardSeq) {
+        boardRepository.deleteById(boardSeq);
+    }
+
 }
